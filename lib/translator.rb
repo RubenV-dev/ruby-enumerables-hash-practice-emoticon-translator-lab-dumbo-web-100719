@@ -3,15 +3,14 @@ require "yaml"
 
 def load_library(file_path)
   emoticon_hash = YAML.load_file(file_path)
-  get_meaning = {}
-  get_emoticon = {}
+  returned_hash = {
+    "get_meaning" = {},
+    "get_emoticon" = {}
+  }
     emoticon_hash.each do |emoticon_name, (english,japanese)|
-      get_meaning[japanese] = {}
-      get_emoticon[english] = {}
+      returned_hash[get_meaning].merge("english" => {})
+      returned_hash[get_emoticon].merge("japanese" => {})
     end
-    returned_hash = {}
-    returned_hash.merge(get_meaning)
-    #returned_hash.merge(get_emoticon)
     returned_hash
     p returned_hash
 end
