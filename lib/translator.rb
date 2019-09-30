@@ -13,6 +13,7 @@ def load_library(file_path)
     returned_hash.merge(get_meaning)
     returned_hash.merge(get_emoticon)
     returned_hash
+    p returned_hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
