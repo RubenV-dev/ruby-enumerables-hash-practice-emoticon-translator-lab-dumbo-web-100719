@@ -23,6 +23,7 @@ def get_japanese_emoticon(file_path, emoticon)
 else
   return "I am sorry but the emoticon entered is not known"
 end
+end
 
 
 
