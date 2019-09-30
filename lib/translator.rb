@@ -15,11 +15,13 @@ def load_library(file_path)
     returned_hash
 end
 
+
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
-  
-  
+  translation_hash = load_library(file_path)
+  p translation_hash
 end
+
+
 
 def get_english_meaning
   # code goes here
