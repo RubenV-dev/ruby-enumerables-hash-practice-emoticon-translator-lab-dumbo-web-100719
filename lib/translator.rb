@@ -8,8 +8,8 @@ def load_library(file_path)
     "get_emoticon" => {}
   }
     emoticon_hash.each do |emoticon_name, (english,japanese)|
-      returned_hash[get_meaning][english] = {}
-      returned_hash[get_emoticon][japanese] = {}
+      returned_hash[get_meaning][japanese] = {}
+      returned_hash[get_emoticon][english] = {}
     end
     
     returned_hash
