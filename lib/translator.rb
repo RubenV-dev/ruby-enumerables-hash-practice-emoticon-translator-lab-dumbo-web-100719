@@ -11,7 +11,7 @@ def load_library(file_path)
     end
     returned_hash = {}
     returned_hash.merge(get_meaning)
-    returned_hash.merge(get_emoticon)
+    #returned_hash.merge(get_emoticon)
     returned_hash
     p returned_hash
 end
